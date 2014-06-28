@@ -1,0 +1,27 @@
+Operating System 
+Lab2
+
+Junye Zhu
+N11235693
+
+My assignment contains a file called “main.cpp”. And we suppose the input samples,rifle and runit.sh, diffit.sh are in a folder named “data2”, while the standard output which professor gave is in “data1”.
+You can run the program via next few steps.
+
+1. Generate the execute program file via GCC. Assume the result program called as “sched” in folder named src.
+++++++++++++++++++++++++++++++++++++++++++++
+++++++  g++ main.cpp -o src/sched   ++++++++
+++++++++++++++++++++++++++++++++++++++++++++
+
+2. Run the program and generate the output. Notice that we do not need the -v option, so we need to delete the part two for in runit.sh.
+when we under the folder data2 (make sure rifle and input files are in data2):
+++++++++++++++++++++++++++++++++++++++++++++++
++++++   ./runit.sh   +++++++
+++++++++++++++++++++++++++++++++++++++++++++++
+Then the output files are in folder data2
+
+3. Check the differences between your output with standard output in data1 by running diffit.sh.
+Suppose you are still in data2:
++++++++++++++++++++++++++++++++++++++++++++++++
++++++   ../diffit.sh ../data1/ ,/  +++++++
++++++++++++++++++++++++++++++++++++++++++++++++
+The information of comparison will be printed. If there is no difference between the two files, then nothing will be printed.
